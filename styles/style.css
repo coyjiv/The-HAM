@@ -4,6 +4,13 @@
   font-family: "Montserrat", sans-serif;
   position: relative;
 }
+.body::-webkit-scrollbar{
+  background-color: #1c2a33;
+  width: 9px;
+}
+.body::-webkit-scrollbar-thumb{
+  background-color: #18cfab;
+}
 
 .header-global {
   height: 120px;
