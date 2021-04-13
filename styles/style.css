@@ -338,6 +338,7 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
+  padding-bottom: 99px;
 }
 .amazing-title {
   font-size: 36px;
@@ -398,13 +399,27 @@
   color: #18cfab;
   border: 1px solid #18cfab;
 }
-
+.item-wrapper-container{
+  position: relative;
+}
 /* ховер блок */
 .creative-design {
   height: 211px;
   width: 285px;
   border-top: 6px solid #18cfab;
-  position: relative;
+  position: absolute;
+  z-index: 1;
+  /* display: none; */
+  opacity: 0;
+  transition: 0.2s ease-in-out opacity;
+  background-color:#e9edef;
+}
+.creative-design:hover{
+  opacity: 1;
+}
+.creative-design.active{
+display: block;
+opacity: 1;
 }
 .amazing-cursor {
   left: 65.62%;
@@ -433,6 +448,14 @@
 }
 .stop_button {
   margin-left: 3px;
+}
+.hidden_wrapper{
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 1140px;
+  opacity: 0;
+  transition: 1s ease-in-out opacity;
 }
 .image-wrapper {
   display: flex;
