@@ -19,13 +19,13 @@
         </div>
         <nav class="nav-top">
             <ul class="header-nav-list">
-                <li class="nav-list-element"><a href="" class="nav-list-link">Home</a></li>
-                <li class="nav-list-element"><a href="" class="nav-list-link">About</a></li>
-                <li class="nav-list-element"><a href="" class="nav-list-link">Blog</a></li>
-                <li class="nav-list-element"><a href="" class="nav-list-link">Skills</a></li>
-                <li class="nav-list-element"><a href="" class="nav-list-link">Service</a></li>
-                <li class="nav-list-element"><a href="" class="nav-list-link">Work</a></li>
-                <li class="nav-list-element"><a href="" class="nav-list-link">Testimonial</a></li>
+                <li class="nav-list-element"><a href="" class="nav-list-link">Home</a><div class="stroke__nav"></div></li>
+                <li class="nav-list-element"><a href="" class="nav-list-link">About</a><div class="stroke__nav"></div></li>
+                <li class="nav-list-element"><a href="" class="nav-list-link">Blog</a><div class="stroke__nav"></div></li>
+                <li class="nav-list-element"><a href="" class="nav-list-link">Skills</a><div class="stroke__nav"></div></li>
+                <li class="nav-list-element"><a href="" class="nav-list-link">Service</a><div class="stroke__nav"></div></li>
+                <li class="nav-list-element"><a href="" class="nav-list-link">Work</a><div class="stroke__nav"></div></li>
+                <li class="nav-list-element"><a href="" class="nav-list-link">Testimonial</a><div class="stroke__nav"></div></li>
             </ul>
         </nav>
     </header>
@@ -175,16 +175,16 @@
 
         <p class="amazing-title">Our Amazing Work</p>
         <ul class="topic-switch">
-            <li class="topic-element">All</li>
-            <li class="topic-element">Graphic Design</li>
-            <li class="topic-element">Web Design</li>
-            <li class="topic-element">Landing Pages</li>
-            <li class="topic-element">Wordpress</li>
+            <li class="topic-element active" data-topic="all">All</li>
+            <li class="topic-element" data-topic="graphic">Graphic Design</li>
+            <li class="topic-element" data-topic="web">Web Design</li>
+            <li class="topic-element" data-topic="landing">Landing Pages</li>
+            <li class="topic-element" data-topic="wordpress">Wordpress</li>
         </ul>
 
         <div class="image-wrapper">
 
-            <div class="item-wrapper-container">    
+            <div class="item-wrapper-container" data-topic="graphic">    
             <div class="creative-design">
                 <img src="./img/our-services/cursor.svg"
             width="24"
@@ -226,7 +226,7 @@
             class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container" data-topic="web" >
             <div class="creative-design">
                 <img src="./img/our-services/cursor.svg"
             width="24"
@@ -268,7 +268,7 @@
             class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container" data-topic="landing">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -309,7 +309,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="graphic">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -350,7 +350,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container" data-topic="landing">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -391,7 +391,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="graphic">
                 <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -432,7 +432,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="web">
                 <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -473,7 +473,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="landing">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -514,7 +514,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="graphic">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -555,7 +555,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="landing">
                 <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -596,7 +596,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="web">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -637,7 +637,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="graphic">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -680,7 +680,7 @@
         </div>
         <div class="hidden_wrapper">
 
-            <div class="item-wrapper-container">    
+            <div class="item-wrapper-container"data-topic="wordpress">    
             <div class="creative-design">
                 <img src="./img/our-services/cursor.svg"
             width="24"
@@ -722,7 +722,7 @@
             class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="wordpress">
             <div class="creative-design">
                 <img src="./img/our-services/cursor.svg"
             width="24"
@@ -764,7 +764,7 @@
             class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="web">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -805,7 +805,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="graphic">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -846,7 +846,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="landing">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -887,7 +887,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="wordpress">
                 <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -928,7 +928,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="graphic">
                 <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -969,7 +969,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="landing">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -1010,7 +1010,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="wordpress">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -1051,7 +1051,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="web">
                 <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -1092,7 +1092,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container"data-topic="landing">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -1133,7 +1133,7 @@
             alt="" class="wrapper-img">
             </div>
 
-            <div class="item-wrapper-container">
+            <div class="item-wrapper-container" data-topic="graphic">
             <div class="creative-design">
                     <img src="./img/our-services/cursor.svg"
                 width="24"
@@ -1290,31 +1290,86 @@
 
     <section class="what-they-say">
         <h1 class="they-say">What People Say About theHam</h1>
-        <h3 class="quote">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</h3>
-        <p class="changable-name">hasan ali</p>
-        <p class="profession">UX Designer</p>
-        <div class="displayable-avatar">
-            <img src="./img/avatars/avatar-stroke.svg" 
-            width="166"
-            height="166"
-            alt="" 
-            class="avatar-stroke">
-            <img src="./img/avatars/Layer 344.png" 
-            width="143"
-            height="142"
-            alt="" class="avatar">
-        </div>
-        <ul class="available-quotes">
-            <li class="quote-element">
-                <div class="button__previous">
-                   
-                    <img src="./img/what-they-say/Forma 1.svg" 
+        <ul class="quote-list">
+            <li class="quote">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</li>
+            <li class="quote">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</li>
+            <li class="quote active"> Geniy Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</li>
+            <li class="quote">Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</li>
+        </ul>
+        
+        <ul class="name">
+            <li class="changable-name">girl in hat</li>
+            <li class="changable-name">statham</li>
+            <li class="changable-name active">hasan ali</li>
+            <li class="changable-name">blond with glasses</li>
+        </ul>
+        
+        <ul class="profession-list">
+            <li class="profession">Artist</li>
+            <li class="profession">Sta</li>
+            <li class="profession active">UX Designer</li>
+            <li class="profession">Pro Doto Girlie</li>
+        </ul>
+        
+        <ul class="displayable-avatar-list">
+            
+            <li class="displayable-avatar">
+                <img src="./img/avatars/avatar-stroke.svg"
+                width="166"
+                height="166"
+                 alt=""
+                 class="avatar-stroke">
+                <img src="./img/avatars/Layer 8.png"
+                width="143"
+                height="142"
+                 alt=""
+                 class="avatar">
+            </li>
+            <li class="displayable-avatar">
+                <img src="./img/avatars/avatar-stroke.svg"
+                width="166"
+                height="166"
+                 alt=""
+                 class="avatar-stroke">
+                <img src="./img/avatars/Layer 7.png"
+                width="143"
+                height="142"
+                 alt=""
+                 class="avatar">
+            </li>           
+            <li class="displayable-avatar active">
+                <img src="./img/avatars/avatar-stroke.svg"
+                width="166"
+                height="166"
+                 alt=""
+                 class="avatar-stroke">
+                <img src="./img/avatars/Layer 344.png"
+                width="143"
+                height="142"
+                 alt=""
+                 class="avatar">
+            </li>
+            <li class="displayable-avatar">
+                <img src="./img/avatars/avatar-stroke.svg"
+                width="166"
+                height="166"
+                 alt=""
+                 class="avatar-stroke">
+                <img src="./img/avatars/Layer 6.png"
+                width="143"
+                height="142"
+                 alt=""
+                 class="avatar">
+            </li>        
+            
+        </ul>
+       <img src="./img/what-they-say/Forma 1.svg" 
                     width="10"
                     height="15"
-                    alt="" class="button_avatar">
-                </div>
-            </li>
-            <li class="quote-element">
+                    alt="" class="button__previous">
+        <ul class="available-quotes">
+            
+            <li class="quote-element" data-first="1">
                 <div class="avatar-container">
                     <img src="./img/avatars/avatar-stroke.svg" 
                     width="70"
@@ -1338,7 +1393,7 @@
                     alt="" class="avatars-choice">
                 </div>
             </li>
-            <li class="quote-element">
+            <li class="quote-element active">
                 <div class="avatar-container">
                     <img src="./img/avatars/avatar-stroke.svg" 
                     width="71"
@@ -1362,7 +1417,7 @@
                     alt="" class="avatars-choice">
                 </div>
             </li>
-            <li class="quote-element">
+            <li class="quote-element" data-first="1">
                 <div class="avatar-container">
                     <img src="./img/avatars/avatar-stroke.svg" 
                     width="70"
@@ -1375,6 +1430,10 @@
                 </div>
             </li>
         </ul>
+        <img src="./img/what-they-say/Forma 1-1.svg" 
+                    width="10"
+                    height="15"
+                    alt="" class="button__next">
     
     </section>
 
