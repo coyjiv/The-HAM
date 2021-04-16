@@ -252,10 +252,19 @@
   padding-left: 50px;
   padding-right: 50px;
   position: relative;
+  transition: 0.3s ease-in-out;
 }
 .service-item.active{
   background-color: #18cfab;
   color: #fff;
+}
+@keyframes opacitychange{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 .service-item.active::after {
   content: "";
@@ -269,6 +278,7 @@
   top: 50px;
   left: 45%;
   z-index: 1;
+  animation: opacitychange 0.32s ease-in-out;
 }
 .service-description {
   display: none;
@@ -354,6 +364,7 @@
   align-items: center;
   position: relative;
   padding-bottom: 99px;
+  transition: height 0.3s ease-in-out;
 }
 .amazing-title {
   font-size: 36px;
@@ -426,6 +437,7 @@
 }
 .item-wrapper-container{
   position: relative;
+  animation: opacitychange 0.3s ease-in-out;
 }
 /* ховер блок */
 .creative-design {
@@ -434,7 +446,6 @@
   border-top: 6px solid #18cfab;
   position: absolute;
   z-index: 1;
-  /* display: none; */
   opacity: 0;
   transition: 0.2s ease-in-out opacity;
   background-color:#e9edef;
@@ -442,10 +453,7 @@
 .creative-design:hover{
   opacity: 1;
 }
-.creative-design.active{
-display: block;
-opacity: 1;
-}
+
 .amazing-cursor {
   left: 65.62%;
   right: 26.39%;
@@ -513,6 +521,7 @@ opacity: 1;
   color: #fff;
   font-weight: 700;
   font-size: 14px;
+  transition: 0.3s ease-in-out;
 }
 .plus {
   position: absolute;
@@ -556,6 +565,13 @@ opacity: 1;
   flex-wrap: wrap;
   margin: 100px auto 129px auto;
   gap: 35px;
+}
+.post-image:hover+.post-heading{
+  color: #18cfab;
+}
+
+.link-post:hover .absolute-date{
+  background-color: #18cfab;
 }
 /* what people say */
 .what-they-say {
@@ -624,6 +640,7 @@ opacity: 1;
 }
 .quote.active{
   display: block;
+  animation: avaChange 0.5s ease-in-out;
 }
 .quote::before {
   content: "";
@@ -642,8 +659,23 @@ opacity: 1;
   margin-top: 38px;
   display: none;
 }
+@keyframes avaChange{
+  0%{
+    opacity: 0;
+    margin-right: 0;
+  }
+  50%{
+    
+    margin-right: 20px;
+  }
+  100%{
+    opacity: 1;
+    margin-right: 0px;
+  }
+}
 .displayable-avatar.active{
   display: block;
+  animation: avaChange 0.5s ease-in-out;
 }
 .avatar-stroke {
   position: relative;
@@ -668,8 +700,19 @@ opacity: 1;
 .quote-element:first-child {
   cursor: pointer;
 }
+@keyframes moveAva{
+  0%{
+    margin-top: 0;
+  }
+  50%{
+    margin-top: 5px;
+  }
+  100%{
+    margin-top: 0;
+  }
+}
 .quote-element.active{
-  margin-top: 25px;
+  animation: moveAva 0.6s ease-in-out;
 }
 .button__previous {
   width: 31px;
@@ -679,6 +722,7 @@ opacity: 1;
   bottom: 100px;
   left: calc(40% - 120px);
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .button__previous:hover {
   border: 1px solid #18cfab;
@@ -692,6 +736,7 @@ opacity: 1;
   bottom: 100px;
   left: calc(72% - 120px);
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .button__next:hover {
   border: 1px solid #18cfab;
@@ -721,14 +766,15 @@ opacity: 1;
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  transition: ease-in-out 0.3s;
 }
 .post-heading {
   text-align: left;
   font-weight: 700;
-  /* color:#18CFAB; */
   color: #717171;
   padding: 16px 40px 0px 30px;
   font-size: 18px;
+  transition: 0.3s ease-in-out;
 }
 .author {
   display: flex;
@@ -750,6 +796,7 @@ opacity: 1;
 }
 .changable-name.active{
   display: block;
+  animation: avaChange 0.5s ease-in-out;
 }
 .profession {
   margin-top: 18px;
@@ -760,6 +807,7 @@ opacity: 1;
 }
 .profession.active{
   display: block;
+  animation: avaChange 0.5s ease-in-out;
 }
 
 /* галлерея */

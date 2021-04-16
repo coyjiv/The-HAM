@@ -22,37 +22,12 @@ tab.addEventListener("click", function(evt){
         }
     });
 });
-
-// =====================================================================
-// our amazing work tabs
-
-const topicUl = document.querySelector(".topic-switch");
-const tabTopicLi = document.querySelectorAll(".topic-element");
-topicUl.addEventListener("click", function(evt){
-
-    const dataTab = evt.target.getAttribute("data-topic");
-    const content = document.querySelectorAll(".item-wrapper-container");
-    tabTopicLi.forEach(function(item){
-        item.classList.remove("active");
-    })
-    evt.target.classList.add("active");
-    content.forEach(imageCont => {
-        imageCont.classList.add("hide");
-        let atr = imageCont.getAttribute("data-topic");
-        if (atr === dataTab) {
-            imageCont.classList.add("active");            
-        }
-        else{
-            imageCont.classList.remove("active");
-        }
-    });
-});
-
-
 // =====================================================================
 // our amazing work load more
 const loadMore = document.querySelector(".load-more");
+let change =0;
 loadMore.addEventListener("click", function(evt){
+    change=1;
     evt.preventDefault();
     const wrapper = document.querySelector(".hidden_wrapper");
     const section = document.querySelector(".amazing-work");
@@ -73,10 +48,58 @@ loadMore.addEventListener("click", function(evt){
     let some = setInterval(animationFade, 20);
     loadMore.style.opacity = 0;
 })
+// =====================================================================
+// our amazing work tabs
+const filtersUl = document.querySelector(".topic-switch");
+const filters = document.querySelectorAll(".topic-element");
+filtersUl.addEventListener("click", function(evt){
+    filters.forEach(function(item){
+        item.classList.remove("active");
+    })
+    evt.target.classList.add("active");
+});
+    for (let filter of filters) {
+    filter.addEventListener('click', function() {
+
+    let topic = filter.getAttribute('data-topic');
+    let itemContainer = document.querySelectorAll('.item-wrapper-container');
+
+    itemContainer.forEach(function(c) {
+
+      if (topic === 'all') {
+        c.classList.remove('hide');
+        loadMore.style.opacity = 1;
+        const section = document.querySelector(".amazing-work");
+        if (change===1) {
+            section.style.height='1762px';
+        }
+        else section.style.height='1212px';
+      } else {
+        const section = document.querySelector(".amazing-work");
+        if (change===1) {
+            section.style.height='840px';   
+        }
+        else{section.style.height='760px';}
+          
+        loadMore.style.opacity = 0;
+        if (c.getAttribute('data-top') !== topic) {
+          c.classList.add('hide');
+        } else {
+          c.classList.remove('hide');
+        }
+      }
+
+    })
+
+  });
+}
+
+
+
+
 
 // what people say slider
 
-// по клику снимаем всем класс актив, выдаем элементам, у которых индекс совпадает с счетчиком
 
 const next = document.querySelector(".button__next");
 const previous = document.querySelector(".button__previous");
