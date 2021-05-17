@@ -227,7 +227,7 @@
   background-color: #18cfab;
   position: absolute;
   top: 70px;
-  left: 914px;
+  left: calc(50% - 25.5px);;
   z-index: 1;
 }
 .title-services::before {
@@ -238,7 +238,7 @@
   background-color: #18cfab;
   position: absolute;
   top: 65px;
-  left: 900px;
+  left: calc(50% - 39.5px);
   z-index: 1;
 }
 .service-list-tabs {
@@ -374,7 +374,7 @@
   background-color: #18cfab;
   position: absolute;
   top: 170px;
-  left: 914px;
+  left: calc(50% - 25.5px);;
   z-index: 1;
 }
 .amazing-title::before {
@@ -385,7 +385,7 @@
   background-color: #18cfab;
   position: absolute;
   top: 165px;
-  left: 900px;
+  left: calc(50% - 39.5px);
   z-index: 1;
 }
 .topic-element {
@@ -529,7 +529,7 @@
   background-color: #18cfab;
   position: absolute;
   top: 70px;
-  left: 914px;
+  left: calc(50% - 25.5px);;
   z-index: 1;
 }
 .breaking-title::before {
@@ -540,7 +540,7 @@
   background-color: #18cfab;
   position: absolute;
   top: 65px;
-  left: 900px;
+  left: calc(50% - 39.5px);
   z-index: 1;
 }
 .posts-wrapper {
@@ -598,7 +598,7 @@
   background-color: #18cfab;
   position: absolute;
   top: 170px;
-  left: 914px;
+  left: calc(50% - 25.5px);;
   z-index: 1;
 }
 .they-say::before {
@@ -609,7 +609,7 @@
   background-color: #18cfab;
   position: absolute;
   top: 165px;
-  left: 900px;
+  left: calc(50% - 39.5px);
   z-index: 1;
 }
 .quote {
@@ -635,7 +635,7 @@
   background-repeat: no-repeat;
   position: absolute;
   top: 240px;
-  left: 920px;
+  left: calc(50% - 23.5px);
 }
 
 .displayable-avatar {
@@ -679,7 +679,7 @@
   border: 1px solid #bbbbbb;
   position: absolute;
   bottom: 100px;
-  left: calc(40% - 120px);
+  left: calc(50% - 292px);
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -693,7 +693,7 @@
   border: 1px solid #bbbbbb;
   position: absolute;
   bottom: 100px;
-  left: calc(72% - 120px);
+  left: calc(50% + 273px);
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -788,7 +788,7 @@
   background-color: #18cfab;
   position: absolute;
   top: 70px;
-  left: 914px;
+  left: calc(50% - 25.5px);;
   z-index: 1;
 }
 .gallery-title::before {
@@ -799,7 +799,7 @@
   background-color: #18cfab;
   position: absolute;
   top: 65px;
-  left: 900px;
+  left: calc(50% - 39.5px);
   z-index: 1;
 }
 .gallery-wrap {
