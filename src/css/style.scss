@@ -1,3 +1,7 @@
+@import "reset";
+html{
+  scroll-behavior: smooth;
+}
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @keyframes moveAva {
   0% {
@@ -76,6 +80,12 @@
 .global__nav {
   margin-left: 305px;
   height: 100%;
+  @media (max-width: 1100px) {
+    margin-left: 192px;
+  }
+  @media (max-width: 992px) {
+    margin-left: 70px;
+  }
 }
 .nav__list {
   display: flex;
@@ -96,6 +106,9 @@
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   transition: 0.2s ease-in-out color;
+  @media (max-width: 1280px) {
+    font-size: 22px;
+  }
 }
 .element__link:hover {
   color: #18cfab;
@@ -104,7 +117,7 @@
 }
 /* main section */
 .creative {
-  background-image: url("../img/Sectionsbackground/section-1.jpg");
+  background-image:url("../img/section-1.jpg");
   background-attachment: fixed;
   position: static;
   height: 1012px;
@@ -164,9 +177,16 @@
 /* 4 option section */
 .option-container {
   display: flex;
+  justify-content: center;
+  @media (max-width: 1280px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 .dark-option,
 .light-option {
+  flex-grow: 1;
   width: 482px;
   height: 377px;
   border-top: 9px solid #fff;
@@ -174,6 +194,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  @media (max-width: 1280px) {
+    width: 100%;
+  }
 }
 .dark-option {
   background-color: #1c2a33;
@@ -205,6 +228,9 @@
 /* our services section */
 .our-services {
   position: relative;
+  @media (max-width: 1144px) {
+    height: 515px;
+  }
 }
 .container {
   display: flex;
@@ -257,6 +283,10 @@
   padding-right: 50px;
   position: relative;
   transition: 0.3s ease-in-out;
+  @media (max-width: 1280px) {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
 }
 .service-item.active {
   background-color: #18cfab;
@@ -272,7 +302,6 @@
 }
 .service-item.active::after {
   content: "";
-  /* display: block; */
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
@@ -289,6 +318,9 @@
   height: 136px;
   width: 1159px;
   margin-top: 28px;
+  @media (max-width: 1144px) {
+    width: 790px;
+  }
 }
 .service-description.active {
   display: flex;
@@ -305,7 +337,7 @@
   margin-left: 15px;
 }
 
-/* купи и установи */
+/* buy-install */
 .buy-install {
   height: 476px;
   position: relative;
@@ -321,16 +353,17 @@
   content: "";
   left: 0;
   top: 0;
-  background-image: url(../img/Sectionsbackground/section-2.jpg);
+  background-image: url("../img/section-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(10px);
   z-index: -2;
   filter: brightness(0.3);
   background-size: auto;
   background-position-x: center;
-  background-position: -3px;
   background-repeat: no-repeat;
+  @media (min-width:1921px) {
+    background-size: cover;
+  }
 }
 .title-buy {
   text-transform: uppercase;
@@ -361,6 +394,9 @@
   position: relative;
   padding-bottom: 99px;
   transition: height 0.3s ease-in-out;
+  @media (max-width: 1144px) {
+    height: 1800px;
+  }
 }
 .amazing-title {
   font-size: 36px;
@@ -473,13 +509,26 @@
   width: 1140px;
   opacity: 0;
   transition: 1s ease-in-out opacity;
+  @media (max-width: 1144px) {
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    height: 2000px;
+  }
 }
 .image-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: 71px;
   width: 1140px;
+  @media (max-width: 1144px) {
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    height: 1486px;
+  }
 }
 .amazing-work-title {
   font-weight: 700;
@@ -545,10 +594,18 @@
 }
 .posts-wrapper {
   display: flex;
+  flex-direction: row;
   width: 1157px;
+  height: 600px;
   flex-wrap: wrap;
   margin: 100px auto 129px auto;
   gap: 35px;
+  @media (max-width: 1144px) {
+    flex-direction: column;
+    height: 1203px;
+    width: 568px;
+    align-content: center;
+  }
 }
 .post-image:hover + .post-heading {
   color: #18cfab;
@@ -573,16 +630,18 @@
   content: "";
   left: 0;
   top: 0;
-  background-image: url(../img/Sectionsbackground/section-3.jpg);
+  background-image: url("../img/section-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(10px);
   z-index: -2;
   filter: brightness(0.6);
   background-size: auto;
   background-position-x: center;
-  background-position: -1px;
   background-repeat: no-repeat;
+  @media (min-width: 1921px) {
+    background-position: -1px;
+    background-size: cover;
+  }
 }
 .they-say {
   margin: 98px auto;
@@ -621,6 +680,9 @@
   margin: 68px auto 0px auto;
   text-align: center;
   display: none;
+  @media (max-width: 1144px) {
+    width: 800px;
+  }
 }
 .quote.active {
   display: block;

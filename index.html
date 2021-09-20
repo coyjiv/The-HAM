@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Step project HAM</title>
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./dist/img/favicon/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="./dist/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./dist/img/favicon/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="mask-icon" href="./dist/img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
   </head>
-  <body class="body">
+  <body id="my-scrollbar" class="body">
     <header class="header-global">
       <div class="logo">
         <p class="logo-h">h</p>
         <img
-          src="./img/logo.svg"
+          src="./src/img/logo.svg"
           width="58"
           height="67"
           alt=""
@@ -31,31 +31,28 @@
       <nav class="global__nav">
         <ul class="nav__list">
           <li class="list__element list__element--active">
-            <a href="" class="element__link">Home</a>
+            <a href="#home" class="element__link">Home</a>
           </li>
           <li class="list__element">
-            <a href="" class="element__link">About</a>
+            <a href="#about" class="element__link">About</a>
           </li>
           <li class="list__element">
-            <a href="" class="element__link">Blog</a>
+            <a href="#blog" class="element__link">Blog</a>
           </li>
           <li class="list__element">
-            <a href="" class="element__link">Skills</a>
+            <a href="#services" class="element__link">Service</a>
           </li>
           <li class="list__element">
-            <a href="" class="element__link">Service</a>
+            <a href="#works" class="element__link">Work</a>
           </li>
           <li class="list__element">
-            <a href="" class="element__link">Work</a>
-          </li>
-          <li class="list__element">
-            <a href="" class="element__link">Testimonial</a>
+            <a href="#testimonial" class="element__link">Testimonial</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section class="creative">
+    <section id="home" class="creative">
       <p class="creative-title">
         The Ham is <span class="wordpress">Wordpress theme</span>
       </p>
@@ -67,11 +64,11 @@
       </div>
     </section>
 
-    <section class="options4">
+    <section id="about" class="body-options">
       <div class="option-container">
         <div class="dark-option">
           <img
-            src="./img/4-options/hand-click.svg"
+            src="./src/img/4-options/hand-click.svg"
             width="61"
             height="100"
             alt=""
@@ -83,7 +80,7 @@
 
         <div class="light-option">
           <img
-            src="./img/4-options/diamond.svg"
+            src="./src/img/4-options/diamond.svg"
             width="93"
             height="75"
             alt=""
@@ -95,7 +92,7 @@
 
         <div class="dark-option">
           <img
-            src="./img/4-options/ecofriendly.svg"
+            src="./src/img/4-options/ecofriendly.svg"
             width="62"
             height="99"
             alt=""
@@ -107,7 +104,7 @@
 
         <div class="light-option">
           <img
-            src="./img/4-options/responsive-dez.svg"
+            src="./src/img/4-options/responsive-dez.svg"
             width="102"
             height="79"
             alt=""
@@ -118,7 +115,7 @@
       </div>
     </section>
 
-    <section class="our-services">
+    <section id="services" class="our-services">
       <p class="title-services">Our Services</p>
       <div class="container">
         <ul class="service-list-tabs">
@@ -147,7 +144,7 @@
             data-tab="web_design"
           >
             <img
-              src="./img/our-services/webdesign.jpg"
+              src="./src/img/our-services/webdesign.jpg"
               width="192"
               height="139"
               alt=""
@@ -173,7 +170,7 @@
             data-tab="graphic_design"
           >
             <img
-              src="./img/graphicdesign/graphic-design2.jpg"
+              src="./src/img/graphicdesign/graphic-design2.jpg"
               width="192"
               height="139"
               alt=""
@@ -198,7 +195,7 @@
             data-tab="online_support"
           >
             <img
-              src="./img/web design/web-design7.jpg"
+              src="./src/img/web design/web-design7.jpg"
               width="192"
               height="139"
               alt=""
@@ -224,7 +221,7 @@
             data-tab="app_design"
           >
             <img
-              src="./img/graphicdesign/graphic-design10.jpg"
+              src="./src/img/graphicdesign/graphic-design10.jpg"
               width="192"
               height="139"
               alt=""
@@ -250,7 +247,7 @@
             data-tab="online_marketing"
           >
             <img
-              src="./img/wordpress/wordpress2.jpg"
+              src="./src/img/wordpress/wordpress2.jpg"
               width="192"
               height="139"
               alt=""
@@ -276,7 +273,7 @@
             data-tab="seo_service"
           >
             <img
-              src="./img/wordpress/wordpress7.jpg"
+              src="./src/img/wordpress/wordpress7.jpg"
               width="192"
               height="139"
               alt=""
@@ -310,7 +307,7 @@
       <a href="" class="button-green-white buy-install_button">purchase now</a>
     </section>
 
-    <section class="amazing-work">
+    <section id="works" class="amazing-work">
       <p class="amazing-title">Our Amazing Work</p>
       <ul class="topic-switch">
         <li class="topic-element active" data-topic="all">All</li>
@@ -326,14 +323,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -342,14 +339,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -361,7 +358,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 24.jpg"
+            src="./src/img/amazing work/items/Layer 24.jpg"
             width="282"
             height="211"
             alt=""
@@ -374,14 +371,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -390,14 +387,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -409,7 +406,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/wordpress/wordpress4.jpg"
+            src="./src/img/wordpress/wordpress4.jpg"
             width="282"
             height="211"
             alt=""
@@ -422,14 +419,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -438,14 +435,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -457,7 +454,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/landing page/landing-page4.jpg"
+            src="./src/img/landing page/landing-page4.jpg"
             width="283"
             height="211"
             alt=""
@@ -470,14 +467,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -486,14 +483,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -505,7 +502,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/graphicdesign/graphic-design4.jpg"
+            src="./src/img/graphicdesign/graphic-design4.jpg"
             width="283"
             height="211"
             alt=""
@@ -518,14 +515,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -534,14 +531,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -553,7 +550,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/landing page/landing-page1.jpg"
+            src="./src/img/landing page/landing-page1.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -566,14 +563,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -582,14 +579,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -601,7 +598,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 28.jpg"
+            src="./src/img/amazing work/items/Layer 28.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -614,14 +611,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -630,14 +627,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -649,7 +646,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/wordpress/wordpress5.jpg"
+            src="./src/img/wordpress/wordpress5.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -662,14 +659,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -678,14 +675,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -697,7 +694,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/landing page/landing-page5.jpg"
+            src="./src/img/landing page/landing-page5.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -710,14 +707,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -726,14 +723,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -745,7 +742,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 31.jpg"
+            src="./src/img/amazing work/items/Layer 31.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -758,14 +755,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -774,14 +771,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -793,7 +790,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/landing page/landing-page6.jpg"
+            src="./src/img/landing page/landing-page6.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -806,14 +803,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -822,14 +819,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -841,7 +838,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/web design/web-design5.jpg"
+            src="./src/img/web design/web-design5.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -854,14 +851,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -870,14 +867,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -889,7 +886,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/wordpress/wordpress6.jpg"
+            src="./src/img/wordpress/wordpress6.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -903,14 +900,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -919,14 +916,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -938,7 +935,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 24.jpg"
+            src="./src/img/amazing work/items/Layer 24.jpg"
             width="282"
             height="211"
             alt=""
@@ -951,14 +948,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -967,14 +964,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -986,7 +983,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 24.jpg"
+            src="./src/img/amazing work/items/Layer 24.jpg"
             width="282"
             height="211"
             alt=""
@@ -999,14 +996,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -1015,14 +1012,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -1034,7 +1031,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 25.jpg"
+            src="./src/img/amazing work/items/Layer 25.jpg"
             width="283"
             height="211"
             alt=""
@@ -1047,14 +1044,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -1063,14 +1060,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -1082,7 +1079,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 26.jpg"
+            src="./src/img/amazing work/items/Layer 26.jpg"
             width="283"
             height="211"
             alt=""
@@ -1095,14 +1092,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -1111,14 +1108,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -1130,7 +1127,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 27.jpg"
+            src="./src/img/amazing work/items/Layer 27.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -1143,14 +1140,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -1159,14 +1156,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -1178,7 +1175,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 28.jpg"
+            src="./src/img/amazing work/items/Layer 28.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -1191,14 +1188,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -1207,14 +1204,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -1226,7 +1223,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 29.jpg"
+            src="./src/img/amazing work/items/Layer 29.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -1239,14 +1236,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -1255,14 +1252,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -1274,7 +1271,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 30.jpg"
+            src="./src/img/amazing work/items/Layer 30.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -1287,14 +1284,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -1303,14 +1300,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -1322,7 +1319,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 31.jpg"
+            src="./src/img/amazing work/items/Layer 31.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -1335,14 +1332,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -1351,14 +1348,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -1370,7 +1367,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 32.jpg"
+            src="./src/img/amazing work/items/Layer 32.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -1383,14 +1380,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -1399,14 +1396,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -1418,7 +1415,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/amazing work/items/Layer 33.jpg"
+            src="./src/img/amazing work/items/Layer 33.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -1431,14 +1428,14 @@
             <div class="link-pause">
               <a href="" class="round-button">
                 <img
-                  src="./img/amazing work/link.svg"
+                  src="./src/img/amazing work/link.svg"
                   width="17"
                   height="17"
                   alt=""
                   class="link"
                 />
                 <img
-                  src="./img/amazing work/ellipse-stroke.svg"
+                  src="./src/img/amazing work/ellipse-stroke.svg"
                   width="41"
                   height="40"
                   alt=""
@@ -1447,14 +1444,14 @@
               </a>
               <a href="" class="round-button stop_button">
                 <img
-                  src="./img/amazing work/stop.svg"
+                  src="./src/img/amazing work/stop.svg"
                   width="12"
                   height="11"
                   alt=""
                   class="stop"
                 />
                 <img
-                  src="./img/amazing work/ellipse-fill.svg"
+                  src="./src/img/amazing work/ellipse-fill.svg"
                   width="43"
                   height="43"
                   alt=""
@@ -1466,7 +1463,7 @@
             <h3 class="amazing-work-subtitle">Web Design</h3>
           </div>
           <img
-            src="./img/graphicdesign/graphic-design7.jpg"
+            src="./src/img/graphicdesign/graphic-design7.jpg"
             width="283"
             height="210.5"
             alt=""
@@ -1477,7 +1474,7 @@
       <a href="" class="load-more"
         >Load more
         <img
-          src="./img/amazing work/plus.svg"
+          src="./src/img/amazing work/plus.svg"
           width="18"
           height="19"
           alt=""
@@ -1485,13 +1482,13 @@
       /></a>
     </section>
 
-    <section class="breaking-news">
+    <section id="blog" class="breaking-news">
       <h1 class="breaking-title">Breaking News</h1>
       <div class="posts-wrapper">
         <a href="" class="link-post">
           <div class="post">
             <img
-              src="./img/breaking news/Layer 47.jpg"
+              src="./src/img/breaking news/Layer 47.jpg"
               alt=""
               class="post-image"
               width="263"
@@ -1512,7 +1509,7 @@
         <a href="" class="link-post">
           <div class="post">
             <img
-              src="./img/breaking news/Layer 50.jpg"
+              src="./src/img/breaking news/Layer 50.jpg"
               alt=""
               class="post-image"
               width="263"
@@ -1533,7 +1530,7 @@
         <a href="" class="link-post">
           <div class="post">
             <img
-              src="./img/breaking news/Layer 51.jpg"
+              src="./src/img/breaking news/Layer 51.jpg"
               alt=""
               class="post-image"
               width="263"
@@ -1554,7 +1551,7 @@
         <a href="" class="link-post">
           <div class="post">
             <img
-              src="./img/breaking news/Layer 52.jpg"
+              src="./src/img/breaking news/Layer 52.jpg"
               alt=""
               class="post-image"
               width="263"
@@ -1575,7 +1572,7 @@
         <a href="" class="link-post">
           <div class="post">
             <img
-              src="./img/breaking news/Layer 53.jpg"
+              src="./src/img/breaking news/Layer 53.jpg"
               alt=""
               class="post-image"
               width="263"
@@ -1596,7 +1593,7 @@
         <a href="" class="link-post">
           <div class="post">
             <img
-              src="./img/breaking news/Layer 54.jpg"
+              src="./src/img/breaking news/Layer 54.jpg"
               alt=""
               class="post-image"
               width="263"
@@ -1617,7 +1614,7 @@
         <a href="" class="link-post">
           <div class="post">
             <img
-              src="./img/breaking news/Layer 55.jpg"
+              src="./src/img/breaking news/Layer 55.jpg"
               alt=""
               class="post-image"
               width="263"
@@ -1638,7 +1635,7 @@
         <a href="" class="link-post">
           <div class="post">
             <img
-              src="./img/breaking news/Layer 56.jpg"
+              src="./src/img/breaking news/Layer 56.jpg"
               alt=""
               class="post-image"
               width="263"
@@ -1659,7 +1656,7 @@
       </div>
     </section>
 
-    <section class="what-they-say">
+    <section id="testimonial" class="what-they-say">
       <h1 class="they-say">What People Say About theHam</h1>
       <ul class="quote-list">
         <li class="quote">
@@ -1705,14 +1702,14 @@
       <ul class="displayable-avatar-list">
         <li class="displayable-avatar">
           <img
-            src="./img/avatars/avatar-stroke.svg"
+            src="./src/img/avatars/avatar-stroke.svg"
             width="166"
             height="166"
             alt=""
             class="avatar-stroke"
           />
           <img
-            src="./img/avatars/Layer 8.png"
+            src="./src/img/avatars/Layer 8.png"
             width="143"
             height="142"
             alt=""
@@ -1721,14 +1718,14 @@
         </li>
         <li class="displayable-avatar">
           <img
-            src="./img/avatars/avatar-stroke.svg"
+            src="./src/img/avatars/avatar-stroke.svg"
             width="166"
             height="166"
             alt=""
             class="avatar-stroke"
           />
           <img
-            src="./img/avatars/Layer 7.png"
+            src="./src/img/avatars/Layer 7.png"
             width="143"
             height="142"
             alt=""
@@ -1737,14 +1734,14 @@
         </li>
         <li class="displayable-avatar active">
           <img
-            src="./img/avatars/avatar-stroke.svg"
+            src="./src/img/avatars/avatar-stroke.svg"
             width="166"
             height="166"
             alt=""
             class="avatar-stroke"
           />
           <img
-            src="./img/avatars/Layer 344.png"
+            src="./src/img/avatars/Layer 344.png"
             width="143"
             height="142"
             alt=""
@@ -1753,14 +1750,14 @@
         </li>
         <li class="displayable-avatar">
           <img
-            src="./img/avatars/avatar-stroke.svg"
+            src="./src/img/avatars/avatar-stroke.svg"
             width="166"
             height="166"
             alt=""
             class="avatar-stroke"
           />
           <img
-            src="./img/avatars/Layer 6.png"
+            src="./src/img/avatars/Layer 6.png"
             width="143"
             height="142"
             alt=""
@@ -1769,7 +1766,7 @@
         </li>
       </ul>
       <img
-        src="./img/what-they-say/Forma 1.svg"
+        src="./src/img/what-they-say/Forma 1.svg"
         width="10"
         height="15"
         alt=""
@@ -1779,14 +1776,14 @@
         <li class="quote-element" data-first="1">
           <div class="avatar-container">
             <img
-              src="./img/avatars/avatar-stroke.svg"
+              src="./src/img/avatars/avatar-stroke.svg"
               width="70"
               height="71"
               alt=""
               class="avatar-stroke"
             />
             <img
-              src="./img/avatars/Layer 8.png"
+              src="./src/img/avatars/Layer 8.png"
               width="60"
               height="59"
               alt=""
@@ -1797,14 +1794,14 @@
         <li class="quote-element">
           <div class="avatar-container">
             <img
-              src="./img/avatars/avatar-stroke.svg"
+              src="./src/img/avatars/avatar-stroke.svg"
               width="70"
               height="69"
               alt=""
               class="avatar-stroke"
             />
             <img
-              src="./img/avatars/Layer 7.png"
+              src="./src/img/avatars/Layer 7.png"
               width="58"
               height="58"
               alt=""
@@ -1815,14 +1812,14 @@
         <li class="quote-element active">
           <div class="avatar-container">
             <img
-              src="./img/avatars/avatar-stroke.svg"
+              src="./src/img/avatars/avatar-stroke.svg"
               width="71"
               height="72"
               alt=""
               class="avatar-stroke"
             />
             <img
-              src="./img/avatars/Layer 5.png"
+              src="./src/img/avatars/Layer 5.png"
               width="61"
               height="61"
               alt=""
@@ -1833,14 +1830,14 @@
         <li class="quote-element">
           <div class="avatar-container">
             <img
-              src="./img/avatars/avatar-stroke.svg"
+              src="./src/img/avatars/avatar-stroke.svg"
               width="70"
               height="70"
               alt=""
               class="avatar-stroke"
             />
             <img
-              src="./img/avatars/Layer 6.png"
+              src="./src/img/avatars/Layer 6.png"
               width="59"
               height="59"
               alt=""
@@ -1851,14 +1848,14 @@
         <li class="quote-element" data-first="1">
           <div class="avatar-container">
             <img
-              src="./img/avatars/avatar-stroke.svg"
+              src="./src/img/avatars/avatar-stroke.svg"
               width="70"
               height="71"
               alt=""
               class="avatar-stroke"
             />
             <img
-              src="./img/avatars/Layer 8.png"
+              src="./src/img/avatars/Layer 8.png"
               width="60"
               height="59"
               alt=""
@@ -1868,42 +1865,13 @@
         </li>
       </ul>
       <img
-        src="./img/what-they-say/Forma 1-1.svg"
+        src="./src/img/what-they-say/Forma 1-1.svg"
         width="10"
         height="15"
         alt=""
         class="button__next"
       />
     </section>
-
-    <!-- <section class="gallery">
-        <h1 class="gallery-title">Gallery of best images</h1>
-        <div class="gallery-wrap">
-            <img src="./img/gallery/1.jpg" width="378" height="263" alt="" class="gallery-image">
-            <img src="./img/gallery/2.jpg" width="378" height="263" alt="" class="gallery-image">
-            <img src="./img/gallery/3.jpg" width="378" height="290" alt="" class="gallery-image">
-            <img src="./img/gallery/4.jpg" width="378" height="380" alt="" class="gallery-image">
-            <img src="./img/gallery/5.jpg" width="378" height="247" alt="" class="gallery-image">
-            <img src="./img/gallery/6.jpg" width="378" height="254" alt="" class="gallery-image">
-            <div class="micro-grid-wrapper">
-                <img src="./img/gallery/grid/1.jpg" alt="" class="grid-item">
-                <img src="./img/gallery/grid/2.jpg" alt="" class="grid-item">
-                <img src="./img/gallery/grid/3.jpg" alt="" class="grid-item">
-                <img src="./img/gallery/grid/4.jpg" alt="" class="grid-item">
-                <img src="./img/gallery/grid/5.jpg" alt="" class="grid-item">
-                <img src="./img/gallery/grid/6.jpg" alt="" class="grid-item">
-                <img src="./img/gallery/grid/7.jpg" alt="" class="grid-item">
-                <img src="./img/gallery/grid/8.jpg" alt="" class="grid-item">
-                <img src="./img/gallery/grid/9.jpg" alt="" class="grid-item">
-                <img src="./img/gallery/grid/10.jpg" alt="" class="grid-item">
-                <img src="./img/gallery/grid/11.jpg" alt="" class="grid-item">
-            </div>
-            <img src="./img/gallery/7.jpg" width="363" height="373" alt="" class="gallery-image">
-        </div>
-
-        <a href="" class="load-more">Load more
-            <img src="./img/amazing work/plus.svg" width="18" height="19" alt="" class="plus"></a>
-    </section> -->
 
     <footer class="copyright">
       <p class="copy">
@@ -1912,6 +1880,6 @@
       </p>
     </footer>
 
-    <script src="./script/script.js"></script>
+    <script src="./dist/js/script.min.js"></script>
   </body>
 </html>
